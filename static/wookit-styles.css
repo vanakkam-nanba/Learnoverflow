@@ -1,0 +1,17 @@
+.star-rating-wrapper {
+  width: 100%;
+}
+
+.woocommerce ul.products li.product .star-rating {
+  display: inline-block;
+  opacity: 0;
+}
+
+.switch .customize-control-title {
+  display: none;
+}
+
+
+h3#order_review_heading {
+    opacity: 0;
+}

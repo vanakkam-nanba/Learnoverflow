@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<script>var et_site_url='https://pl-coding.com';var et_post_id='3651';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.0.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Why Every Android Developer Should Know Kotlin (9:16) - pl-coding.com</title>
+	<link rel="canonical" href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Why Every Android Developer Should Know Kotlin (9:16) - pl-coding.com">
+	<meta property="og:description" content="Kotlin Newbie to Pro Why Every Android Developer Should Know Kotlin (9:16) In Progress Back to Course Next Lesson">
+	<meta property="og:url" content="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/">
+	<meta property="og:site_name" content="pl-coding.com">
+	<meta property="article:modified_time" content="2020-09-20T15:44:41+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://pl-coding.com/#organization","name":"PL Coding","url":"https://pl-coding.com/","sameAs":["https://instagram.com/philipplackner_official","https://youtube.com/c/PhilippLackner"],"logo":{"@type":"ImageObject","@id":"https://pl-coding.com/#logo","inLanguage":"en-US","url":"https://pl-coding.com/wp-content/uploads/2020/08/logo-1.svg","caption":"PL Coding"},"image":{"@id":"https://pl-coding.com/#logo"}},{"@type":"WebSite","@id":"https://pl-coding.com/#website","url":"https://pl-coding.com/","name":"pl-coding.com","description":"Complex Made Simple","publisher":{"@id":"https://pl-coding.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://pl-coding.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#webpage","url":"https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/","name":"Why Every Android Developer Should Know Kotlin (9:16) - pl-coding.com","isPartOf":{"@id":"https://pl-coding.com/#website"},"datePublished":"2020-05-15T11:11:47+00:00","dateModified":"2020-09-20T15:44:41+00:00","breadcrumb":{"@id":"https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/"]}]},{"@type":"BreadcrumbList","@id":"https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://pl-coding.com/","url":"https://pl-coding.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/","url":"https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/","name":"Why Every Android Developer Should Know Kotlin (9:16)"}}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://polyfill.io/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="pl-coding.com » Feed" href="https://pl-coding.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="pl-coding.com » Comments Feed" href="https://pl-coding.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/pl-coding.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Video Player- pl-coding_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<meta content="Child Theme v.1.0.0" name="generator"><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./Video Player- pl-coding_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-vendors-style-css" href="./Video Player- pl-coding_files/vendors-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="./Video Player- pl-coding_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-blocks-css" href="./Video Player- pl-coding_files/blocks.style.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-law-info-css" href="./Video Player- pl-coding_files/cookie-law-info-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-law-info-gdpr-css" href="./Video Player- pl-coding_files/cookie-law-info-gdpr.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_quiz_front_css-css" href="./Video Player- pl-coding_files/learndash_quiz_front.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-front-css" href="./Video Player- pl-coding_files/learndash.min.css" type="text/css" media="all">
+<style id="learndash-front-inline-css" type="text/css">
+		.learndash-wrapper .ld-item-list .ld-item-list-item.ld-is-next,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label:focus-within {
+			border-color: #0aa700;
+		}
+
+		/*
+		.learndash-wrapper a:not(.ld-button):not(#quiz_continue_link):not(.ld-focus-menu-link):not(.btn-blue):not(#quiz_continue_link):not(.ld-js-register-account):not(#ld-focus-mode-course-heading):not(#btn-join):not(.ld-item-name):not(.ld-table-list-item-preview):not(.ld-lesson-item-preview-heading),
+		 */
+
+		.learndash-wrapper .ld-breadcrumbs a,
+		.learndash-wrapper .ld-lesson-item.ld-is-current-lesson .ld-lesson-item-preview-heading,
+		.learndash-wrapper .ld-lesson-item.ld-is-current-lesson .ld-lesson-title,
+		.learndash-wrapper .ld-primary-color-hover:hover,
+		.learndash-wrapper .ld-primary-color,
+		.learndash-wrapper .ld-primary-color-hover:hover,
+		.learndash-wrapper .ld-primary-color,
+		.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active,
+		.learndash-wrapper .ld-button.ld-button-transparent,
+		.learndash-wrapper .ld-button.ld-button-reverse,
+		.learndash-wrapper .ld-icon-certificate,
+		.learndash-wrapper .ld-login-modal .ld-login-modal-login .ld-modal-heading,
+		#wpProQuiz_user_content a,
+		.learndash-wrapper .ld-item-list .ld-item-list-item a.ld-item-name:hover,
+		.learndash-wrapper .ld-focus-comments__heading-actions .ld-expand-button,
+		.learndash-wrapper .ld-focus-comments__heading a,
+		.learndash-wrapper .ld-focus-comments .comment-respond a,
+		.learndash-wrapper .ld-focus-comment .ld-comment-reply a.comment-reply-link:hover,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate {
+			color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .ld-focus-comment.bypostauthor>.ld-comment-wrapper,
+		.learndash-wrapper .ld-focus-comment.role-group_leader>.ld-comment-wrapper,
+		.learndash-wrapper .ld-focus-comment.role-administrator>.ld-comment-wrapper {
+			background-color:rgba(10, 167, 0, 0.03) !important;
+		}
+
+
+		.learndash-wrapper .ld-primary-background,
+		.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after {
+			background: #0aa700 !important;
+		}
+
+
+
+		.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-status-incomplete,
+		.learndash-wrapper .ld-focus-comment.bypostauthor:not(.ptype-sfwd-assignment) >.ld-comment-wrapper>.ld-comment-avatar img,
+		.learndash-wrapper .ld-focus-comment.role-group_leader>.ld-comment-wrapper>.ld-comment-avatar img,
+		.learndash-wrapper .ld-focus-comment.role-administrator>.ld-comment-wrapper>.ld-comment-avatar img {
+			border-color: #0aa700 !important;
+		}
+
+
+
+		.learndash-wrapper .ld-loading::before {
+			border-top:3px solid #0aa700 !important;
+		}
+
+		.learndash-wrapper .ld-button:hover:not(.learndash-link-previous-incomplete):not(.ld-button-transparent),
+		#learndash-tooltips .ld-tooltip:after,
+		#learndash-tooltips .ld-tooltip,
+		.learndash-wrapper .ld-primary-background,
+		.learndash-wrapper .btn-join,
+		.learndash-wrapper #btn-join,
+		.learndash-wrapper .ld-button:not(.ld-js-register-account):not(.learndash-link-previous-incomplete):not(.ld-button-transparent),
+		.learndash-wrapper .ld-expand-button,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button:not(.wpProQuiz_button_reShowQuestion):not(.wpProQuiz_button_restartQuiz),
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button2,
+		.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading,
+		.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger,
+		.learndash-wrapper .ld-focus-comments .form-submit #submit,
+		.learndash-wrapper .ld-login-modal input[type='submit'],
+		.learndash-wrapper .ld-login-modal .ld-login-modal-register,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_certificate a.btn-blue,
+		.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+		#wpProQuiz_user_content table.wp-list-table thead th,
+		#wpProQuiz_overlay_close,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+			background-color: #0aa700 !important;
+		}
+
+
+		.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items:before {
+			border-bottom-color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .ld-button.ld-button-transparent:hover {
+			background: transparent !important;
+		}
+
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+		.learndash-wrapper .ld-button.ld-button-transparent,
+		.learndash-wrapper .ld-button.ld-button-alternate,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate {
+			background-color:transparent !important;
+		}
+
+		.learndash-wrapper .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+		.learndash-wrapper .ld-button.ld-button-reverse:hover,
+		.learndash-wrapper .ld-alert-success .ld-alert-icon.ld-icon-certificate,
+		.learndash-wrapper .ld-alert-warning .ld-button:not(.learndash-link-previous-incomplete),
+		.learndash-wrapper .ld-primary-background.ld-status {
+			color:white !important;
+		}
+
+		.learndash-wrapper .ld-status.ld-status-unlocked {
+			background-color: rgba(10,167,0,0.2) !important;
+			color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_addToplist {
+			background-color: rgba(10,167,0,0.1) !important;
+			border: 1px solid #0aa700 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_toplistTable th {
+			background: #0aa700 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_toplistTrOdd {
+			background-color: rgba(10,167,0,0.1) !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_reviewDiv li.wpProQuiz_reviewQuestionTarget {
+			background-color: #0aa700 !important;
+		}
+
+		
+		.learndash-wrapper #quiz_continue_link,
+		.learndash-wrapper .ld-secondary-background,
+		.learndash-wrapper .learndash_mark_complete_button,
+		.learndash-wrapper #learndash_mark_complete_button,
+		.learndash-wrapper .ld-status-complete,
+		.learndash-wrapper .ld-alert-success .ld-button,
+		.learndash-wrapper .ld-alert-success .ld-alert-icon {
+			background-color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content a#quiz_continue_link {
+			background-color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .course_progress .sending_progress_bar {
+			background: #0aa700 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button_reShowQuestion:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button_restartQuiz:hover {
+			background-color: #0aa700 !important;
+			opacity: 0.75;
+		}
+
+		.learndash-wrapper .ld-secondary-color-hover:hover,
+		.learndash-wrapper .ld-secondary-color,
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete:after {
+			color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .ld-secondary-in-progress-icon {
+			border-left-color: #0aa700 !important;
+			border-top-color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .ld-alert-success {
+			border-color: #0aa700;
+			background-color: transparent !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolved,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_box li.wpProQuiz_reviewQuestionSolved {
+			background-color: #0aa700 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content  .wpProQuiz_reviewLegend span.wpProQuiz_reviewColor_Answer {
+			background-color: #0aa700 !important;
+		}
+
+		
+		.learndash-wrapper .ld-alert-warning {
+			background-color:transparent;
+		}
+
+		.learndash-wrapper .ld-status-waiting,
+		.learndash-wrapper .ld-alert-warning .ld-alert-icon {
+			background-color: #dd8604 !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-color-hover:hover,
+		.learndash-wrapper .ld-tertiary-color,
+		.learndash-wrapper .ld-alert-warning {
+			color: #dd8604 !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-background {
+			background-color: #dd8604 !important;
+		}
+
+		.learndash-wrapper .ld-alert-warning {
+			border-color: #dd8604 !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-background,
+		.learndash-wrapper .ld-alert-warning .ld-alert-icon {
+			color:white !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionReview,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_box li.wpProQuiz_reviewQuestionReview {
+			background-color: #dd8604 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content  .wpProQuiz_reviewLegend span.wpProQuiz_reviewColor_Review {
+			background-color: #dd8604 !important;
+		}
+
+				.learndash-wrapper .ld-focus .ld-focus-main .ld-focus-content {
+			max-width: inherit;
+		}
+		
+
+            
+
+                                    .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled,
+                    .ld-course-list-items .ld_course_grid .thumbnail.course a.btn-primary {
+                        background: #0aa700;
+                        border-color: #0aa700;
+                    }
+                    .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled:before {
+                        border-top-color: #0aa700;
+                        border-right-color: #0aa700;
+                    }
+                                    .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
+                        background-color: #0aa700;
+                    }
+                    .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
+                        border-top-color: #0aa700;
+                        border-right-color: #0aa700;
+                    }
+                
+
+    
+        .learndash-wrapper .ld-item-list.ld-course-list .ld-section-heading h2,
+        .learndash-wrapper .ld-item-list.ld-lesson-list .ld-section-heading h2 {
+            font-size: px;
+        }
+
+    
+        .learndash-wrapper .ld-item-list.ld-course-list .ld-lesson-section-heading,
+        .learndash-wrapper .ld-item-list.ld-lesson-list .ld-lesson-section-heading {
+            font-size: px;
+        }
+
+    
+        .learndash-wrapper .ld-topic-title,
+        .learndash-wrapper .ld-lesson-title,
+        .learndash-wrapper .ld-item-title {
+            font-size: px;
+        }
+
+    
+        .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-details .ld-expand-button,
+        .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-title .ld-item-components,
+        .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-title .ld-item-components .ld-status {
+            font-size: px;
+        }
+
+    
+        .learndash-wrapper .ld-course-navigation .ld-lesson-item-section-heading .ld-lesson-section-heading {
+            font-size: px;
+            line-height: 1.4em;
+        }
+
+    
+        .learndash-wrapper .ld-course-navigation .ld-lesson-item-preview .ld-lesson-title {
+            font-size: px;
+            line-height: 1.4em;
+        }
+
+    
+        .learndash-wrapper .ld-course-navigation .ld-table-list.ld-topic-list .ld-table-list-item {
+            font-size: px;
+            line-height: 1.4em;
+        }
+
+    
+        .learndash-wrapper .ld-course-navigation .ld-lesson-item-preview .ld-expand-button {
+            font-size: px;
+            line-height: 1.4em;
+        }
+
+    
+        .learndash-wrapper .ld-pagination .ld-pages,
+        .learndash-wrapper #sfwd_lms_mark_complete,
+        .learndash-wrapper .ld-button,
+        .learndash-wrapper .ld-expand-button {
+            font-size: px;
+        }
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+        .learndash-wrapper.lds-template-expanded .ld-table-list-item-preview.learndash-complete::before,
+        .learndash-wrapper.lds-template-expanded .ld-table-list-item-preview.learndash-complete::after, 
+        .learndash-wrapper.lds-template-expanded .ld-course-navigation .learndash-complete + .ld-lesson-item-section-heading .ld-lesson-section-heading::after,
+        .learndash-wrapper.lds-template-expanded .ld-quiz-complete .ld-icon-quiz,
+        .learndash-wrapper.lds-template-expanded .ld-item-list-item.learndash-complete + .ld-item-list-section-heading .ld-lesson-section-heading::before,
+        .learndash-wrapper.lds-template-expanded .ld-item-list-section-heading::after,
+        .ld-table-list.ld-topic-list .learndash-complete .ld-table-list-item-preview::before,
+        .ld-table-list.ld-topic-list .learndash-complete .ld-table-list-item-preview::after,
+        .learndash-wrapper.lds-template-expanded .learndash-complete .ld-item-list-item-expanded .ld-table-list-item-preview::before,
+        .learndash-wrapper.lds-template-expanded .ld-lesson-item.learndash-complete::after,
+        .learndash-wrapper.lds-template-expanded .ld-course-navigation .ld-lesson-item.learndash-complete::after,
+        .learndash-wrapper.lds-template-expanded .ld-item-list .ld-item-list-item.learndash-complete::after,
+        .learndash-wrapper.lds-template-expanded .ld-lesson-item.learndash-complete::before,
+        .learndash-wrapper.lds-template-expanded .ld-item-list .learndash-complete .ld-item-list-item::after {
+            background: #0aa700 !important;
+        }
+
+    
+
+
+
+
+    
+
+
+    
+
+            
+
+        
+</style>
+<link rel="stylesheet" id="ldx-design-upgrade-learndash-css" href="./Video Player- pl-coding_files/ld3.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-notes-css" href="./Video Player- pl-coding_files/note.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-dropdown-css-css" href="./Video Player- pl-coding_files/jquery.dropdown.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_lesson_video-css" href="./Video Player- pl-coding_files/learndash_lesson_video.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-layout-css" href="./Video Player- pl-coding_files/woocommerce-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Video Player- pl-coding_files/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="./Video Player- pl-coding_files/woocommerce.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="wcz-frontend-css" href="./Video Player- pl-coding_files/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="wookit-css-css" href="./Video Player- pl-coding_files/wookit-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="./Video Player- pl-coding_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="divi-fonts-css" href="./Video Player- pl-coding_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="./Video Player- pl-coding_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Video Player- pl-coding_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighterjs-css" href="./Video Player- pl-coding_files/enlighterjs.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_ii-css" href="./Video Player- pl-coding_files/um-fonticons-ii.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_fa-css" href="./Video Player- pl-coding_files/um-fonticons-fa.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css" href="./Video Player- pl-coding_files/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_crop-css" href="./Video Player- pl-coding_files/um-crop.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_modal-css" href="./Video Player- pl-coding_files/um-modal.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_styles-css" href="./Video Player- pl-coding_files/um-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_profile-css" href="./Video Player- pl-coding_files/um-profile.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_account-css" href="./Video Player- pl-coding_files/um-account.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_misc-css" href="./Video Player- pl-coding_files/um-misc.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fileupload-css" href="./Video Player- pl-coding_files/um-fileupload.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime-css" href="./Video Player- pl-coding_files/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_date-css" href="./Video Player- pl-coding_files/default.date.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_time-css" href="./Video Player- pl-coding_files/default.time.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_raty-css" href="./Video Player- pl-coding_files/um-raty.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_scrollbar-css" href="./Video Player- pl-coding_files/simplebar.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_tipsy-css" href="./Video Player- pl-coding_files/um-tipsy.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_responsive-css" href="./Video Player- pl-coding_files/um-responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_default_css-css" href="./Video Player- pl-coding_files/um-old-default.css" type="text/css" media="all">
+<link rel="stylesheet" id="site-reviews-css" href="./Video Player- pl-coding_files/site-reviews.css" type="text/css" media="all">
+<style id="site-reviews-inline-css" type="text/css">
+.gl-star-rating-stars>span,.glsr-star-empty{background-image:url(https://pl-coding.com/wp-content/uploads/2020/10/star-empty.svg)!important}.glsr-has-error .gl-star-rating-stars>span{background-image:url(https://pl-coding.com/wp-content/plugins/site-reviews/assets/images/star-error.svg)!important}.glsr-star-half{background-image:url(https://pl-coding.com/wp-content/uploads/2020/10/star-half.svg)!important}.gl-star-rating-stars.s10>span:first-child,.gl-star-rating-stars.s20>span:nth-child(-1n+2),.gl-star-rating-stars.s30>span:nth-child(-1n+3),.gl-star-rating-stars.s40>span:nth-child(-1n+4),.gl-star-rating-stars.s50>span:nth-child(-1n+5),.gl-star-rating-stars.s60>span:nth-child(-1n+6),.gl-star-rating-stars.s70>span:nth-child(-1n+7),.gl-star-rating-stars.s80>span:nth-child(-1n+8),.gl-star-rating-stars.s90>span:nth-child(-1n+9),.gl-star-rating-stars.s100>span,.glsr-star-full{background-image:url(https://pl-coding.com/wp-content/uploads/2020/10/star-full.svg)!important}
+</style>
+<link rel="stylesheet" id="wookit-slick-css-css" href="./Video Player- pl-coding_files/slick.css" type="text/css" media="all">
+<link rel="stylesheet" id="wookit-slick-theme-css" href="./Video Player- pl-coding_files/slick-theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="wookit-carouselcss-css" href="./Video Player- pl-coding_files/carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="ldvc-css" href="./Video Player- pl-coding_files/ldvc.css" type="text/css" media="all">
+<link rel="stylesheet" id="ldvc-template-expanded-css" href="./Video Player- pl-coding_files/expanded.css" type="text/css" media="all">
+<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><script type="text/javascript" src="./Video Player- pl-coding_files/frontend.blocks.js.download" id="ldlms-blocks-frontend-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="cookie-law-info-js-extra">
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#202020","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#0a0000","button_1_button_hover":"#080000","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#0a0202","button_3_button_hover":"#080202","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#62a329","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/pl-coding.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/cookie-law-info-public.js.download" id="cookie-law-info-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/core.min.js.download" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/mouse.min.js.download" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/draggable.min.js.download" id="jquery-ui-draggable-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/resizable.min.js.download" id="jquery-ui-resizable-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/nt_notes_lib.js.download" id="learndash-notes-lib-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/jquery.ui.touch-punch.min.js.download" id="jquery-ui-touch-punch-js"></script>
+<script type="text/javascript" id="nt-notes-js-extra">
+/* <![CDATA[ */
+var nt_ajax_call = {"adminAjax":"https:\/\/pl-coding.com\/wp-admin\/admin-ajax.php","security":"b6959555af","user_id":"4690","nt_position_top":"","nt_position_left":"","nt_width":"","nt_height":"","nt_tinymce_height":"","nt_permalinks":"yes","nt_saved_txt":"Note saved.","nt_saved_at_txt":"Note saved at","nt_delete_txt":"Are you sure you want to delete this?","nt_autosave":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/nt_notes.js.download" id="nt-notes-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/wookit-scripts.js.download" id="wookit-js-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/ds-script.js.download" id="ds-theme-script-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-gdpr.min.js.download" id="um-gdpr-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/polyfill.min.js.download" id="site-reviews/polyfill-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/slick.min.js.download" id="wookit-slick-js-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/carouselhandler.js.download" id="wookit-carouselhandler-js"></script>
+<link rel="https://api.w.org/" href="https://pl-coding.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pl-coding.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://pl-coding.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7.3">
+<meta name="generator" content="WooCommerce 5.5.1">
+<link rel="shortlink" href="https://pl-coding.com/?p=3651">
+<link rel="alternate" type="application/json+oembed" href="https://pl-coding.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpl-coding.com%2Flessons%2Fwhy-every-android-developer-should-know-kotlin%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://pl-coding.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpl-coding.com%2Flessons%2Fwhy-every-android-developer-should-know-kotlin%2F&amp;format=xml">
+
+            
+            <style type="text/css">
+
+                .nt-note-tab, .nt-note-wrapper { right: 30px; }
+                
+                
+                
+                
+                
+                
+                
+            </style>
+            		<style type="text/css">
+			.um_request_name {
+				display: none !important;
+			}
+		</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="preload" href="https://pl-coding.com/wp-content/themes/Divi/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous">	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link href="./Video Player- pl-coding_files/css(1)" rel="stylesheet"><link href="./Video Player- pl-coding_files/css2" rel="stylesheet">
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var maincontent_height = jQuery("#main-content").height();
+var window_height = jQuery(window).height();
+if(maincontent_height < window_height){ jQuery('#main-footer').css({"position":"fixed","bottom":"0px" , "width":"100%"}); jQuery('body').css({"overflow":"hidden"}); } });
+</script>
+<meta property="og:image" content="https://pl-coding.com/wp-content/uploads/2020/12/pl-coding-1.png"><meta property="og:type" content="website"><meta property="og:url" content="https://pl-coding.com"><meta property="og:title" content="Welcome to PL Coding! Complex Made Simple."><meta property="og:description" content="Learn with hundreds of videos. Test yourself with quizzes. Take notes. Earn rewards. Climb ranks. Create your free account now!"><link rel="icon" href="https://pl-coding.com/wp-content/uploads/2020/08/cropped-plcoding_PNG_person-32x32.png" sizes="32x32">
+<link rel="icon" href="https://pl-coding.com/wp-content/uploads/2020/08/cropped-plcoding_PNG_person-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://pl-coding.com/wp-content/uploads/2020/08/cropped-plcoding_PNG_person-180x180.png">
+<meta name="msapplication-TileImage" content="https://pl-coding.com/wp-content/uploads/2020/08/cropped-plcoding_PNG_person-270x270.png">
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="./Video Player- pl-coding_files/et-divi-customizer-global-162893772887.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)"><link rel="stylesheet" id="et-core-unified-cpt-tb-28-tb-29-3651-cached-inline-styles" href="./Video Player- pl-coding_files/et-core-unified-cpt-tb-28-tb-29-3651-1628943839.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)"><style id="kirki-inline-styles"></style>	<style>[data-columns]::before{visibility:hidden;position:absolute;font-size:1px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css">.answernumber {
+  user-select: none; }
+</style><link rel="stylesheet" type="text/css" id="u0" href="./Video Player- pl-coding_files/skin.min.css"></head>
+	<body class="sfwd-lessons-template-default single single-sfwd-lessons postid-3651 logged-in theme-Divi et-tb-has-template et-tb-has-body et-tb-has-footer ldx-plugin has-notepad ld-in-focus-mode woocommerce-js wcz-woocommerce et_pb_button_helper_class et_non_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_divi_theme et-db et_minified_js et_minified_css learndash-cpt learndash-cpt-sfwd-lessons learndash-embed-responsive chrome" data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed=""><div class="nt-note-wrapper ui-draggable ui-draggable-handle ui-resizable" id="nt-note-wrapper-3651">
+
+	    <div class="note-header">
+			<span class="nt-close-icon">x</span>
+			<div class="note-header-actions"></div>
+		</div> <!--/note-header-->
+
+		<div id="nt-note-title-bar">
+			Take Notes		</div>
+
+		<div id="apf-response"></div>
+
+	    <div class="note-body">
+
+	      <form id="nt-course-note" data-bodyid="nt-note-body-3651" action="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/" method="post">
+
+				<input type="hidden" id="nt-course-note-nonce" name="nt-course-note-nonce" value="c8f87b1c9f"><input type="hidden" name="_wp_http_referer" value="/lessons/why-every-android-developer-should-know-kotlin/">
+				<div id="nt-note-title-field">
+					<input type="text" name="nt-note-title" class="nt-note-title" value="Why Every Android Developer Should Know Kotlin (9:16)" placeholder="Why Every Android Developer Should Know Kotlin (9:16)">
+				</div>
+
+				<input type="hidden" name="nt-note-user-id" class="nt-note-user-id" value="4690">
+				<input type="hidden" name="nt-note-current-lesson-id" class="nt-note-current-lessson-id" value="3651">
+				<input type="hidden" name="nt-note-current-post-type" class="nt-note-current-post-type" value="sfwd-lessons">
+				<input type="hidden" name="nt-note-id" class="nt-note-id" value="new">
+
+				
+				<div id="nt-note-editor-body-3651" class="nt-note-editor-body">
+					<div id="wp-nt-note-body-3651-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel="stylesheet" id="editor-buttons-css" href="./Video Player- pl-coding_files/editor.min.css" type="text/css" media="all">
+<div id="wp-nt-note-body-3651-editor-container" class="wp-editor-container"><div id="mceu_9" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_9-body" class="mce-container-body mce-stack-layout"><div id="mceu_10" class="mce-top-part mce-container mce-stack-layout-item mce-first"><div id="mceu_10-body" class="mce-container-body"><div id="mceu_11" class="mce-toolbar-grp mce-container mce-panel mce-first mce-last" hidefocus="1" tabindex="-1" role="group"><div id="mceu_11-body" class="mce-container-body mce-stack-layout"><div id="mceu_12" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_12-body" class="mce-container-body mce-flow-layout"><div id="mceu_13" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_13-body"><div id="mceu_0" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Bold (Ctrl+B)"><button id="mceu_0-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_1" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Italic (Ctrl+I)"><button id="mceu_1-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_2" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Underline (Ctrl+U)"><button id="mceu_2-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div><div id="mceu_3" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Strikethrough (Shift+Alt+D)"><button id="mceu_3-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-strikethrough"></i></button></div><div id="mceu_4" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Blockquote (Shift+Alt+Q)"><button id="mceu_4-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-blockquote"></i></button></div><div id="mceu_5" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Numbered list (Shift+Alt+O)"><button id="mceu_5-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mceu_6" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Bulleted list (Shift+Alt+U)"><button id="mceu_6-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_7" class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_7" role="button" aria-label="Font Sizes" aria-haspopup="true"><button id="mceu_7-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">12pt</span> <i class="mce-caret"></i></button></div><div id="mceu_8" class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-last mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_8" role="button" aria-haspopup="true"><button id="mceu_8-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Paragraph</span> <i class="mce-caret"></i></button></div></div></div></div></div></div></div></div></div><div id="mceu_14" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="nt-note-body-3651_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press Alt-Shift-H for help." style="width: 100%; height: 175px; display: block;" src="./Video Player- pl-coding_files/saved_resource.html"></iframe></div><div id="mceu_15" class="mce-statusbar mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_15-body" class="mce-container-body mce-flow-layout"><div id="mceu_16" class="mce-path mce-flow-layout-item mce-first"><div class="mce-path-item">&nbsp;</div></div><div id="mceu_17" class="mce-flow-layout-item mce-last mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea class="wp-editor-area" style="height: 175px; display: none;" autocomplete="off" cols="40" name="nt-note-body-3651" id="nt-note-body-3651" aria-hidden="true">Notes:</textarea></div>
+</div>
+
+
+					<input type="text" id="xyz" name="date-submitted" value="" style="display:none">
+				</div>
+
+				<div id="nt-note-actions-wrapper">
+
+					<ul id="nt-note-actions">
+						<li><input type="submit" class="nt-note-submit" value="Save"></li>
+						<li><a href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#" class="learndash-notes-print-modal" data-note="3651" title="Print"><i class="nticon-print"></i></a></li>
+						<li><a href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#" class="learndash-notes-download-modal" data-note="3651" title="Download"><i class="nticon-file-word"></i></a></li>
+											</ul>
+
+				</div>
+
+				<p id="nt-utility-links" class="">
+
+					<a href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#" class="nt-reset-dimensions"><i class="fa fa-arrows"></i> Reset Dimensions</a>
+					
+				</p>
+
+		  </form>
+
+	  	</div> <!--/.note-body-->
+
+	<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+
+		<div class="learndash-wrapper lds-template-expanded">
+						<div class="ld-focus ">
+				<div id="et-boc" class="et-boc">
+			
+		
+<div class="ld-focus-sidebar">
+	<div class="ld-course-navigation-heading">
+
+		
+		<span class="ld-focus-sidebar-trigger">
+									<span class="ld-icon ld-icon-arrow-left"></span>
+								</span>
+
+		
+		
+		<h3>
+			<a href="https://pl-coding.com/courses/kotlin-newbie-to-pro/" id="ld-focus-mode-course-heading">
+				<span class="ld-icon ld-icon-content"></span>
+				Kotlin Newbie to Pro			</a>
+		</h3>
+			</div>
+	<div class="ld-focus-sidebar-wrapper">
+				<div class="ld-course-navigation">
+			<div class="ld-course-navigation-list">
+				<div class="ld-lesson-navigation">
+					<div class="ld-lesson-items" id="ld-lesson-list-3644">
+						<div class="ld-lesson-item-section-heading ld-lesson-item-section-heading-1592644907313">
+		<span class="ld-lesson-section-heading" role="heading" aria-level="3">Introduction</span>
+	</div>
+
+<div class="ld-lesson-item ld-is-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Why Every Android Developer Should Know Kotlin (9:16)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+	</div> <!--/.ld-lesson-item-preview-->
+	</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/setting-up-what-we-need/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Setting up What We Need (11:11)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+	</div> <!--/.ld-lesson-item-preview-->
+	</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/hello-world/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Hello World (6:19)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+	</div> <!--/.ld-lesson-item-preview-->
+	</div> <!--/.ld-lesson-item-->
+<div class="ld-lesson-item-section-heading ld-lesson-item-section-heading-1592644919404">
+		<span class="ld-lesson-section-heading" role="heading" aria-level="3">Kotlin Basics</span>
+	</div>
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/var-val-integer-boolean/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Var, Val, Integer, Boolean (11:54)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3657" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3657">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/var-val-int-boolean-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Var/Val/Int/Boolean Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/arithmetic-operators/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Arithmetic Operators (11:33)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3659" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3659">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/arithmetic-operators-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Arithmetic Operators Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/decimal-numbers/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Decimal Numbers (7:47)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3661" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3661">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/decimal-numbers-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Decimal Numbers Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/strings/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Strings (7:49)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3663" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3663">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/strings-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Strings Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/logical-and-comparison-operators/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Logical and Comparison Operators (12:05)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3665" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3665">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/operator-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Operator Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/if-conditions/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				If Conditions (13:14)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3667" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3667">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/if-statement-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">If-Statement Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/null-values-and-user-input/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Null Values and User Input (11:47)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3669" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3669">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/null-values-and-user-input-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Null Values and User Input Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/arrays/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Arrays (7:24)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3671" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3671">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/array-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Array Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/while-loop/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				While Loop (11:12)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3673" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3673">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/while-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">While Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/for-loop/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				For Loop (12:43)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3675" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3675">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/for-loop-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">For-Loop Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/lists/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Lists (14:28)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3677" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3677">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/lists-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Lists Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/when-expression/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				When Expression (17:29)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3679" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3679">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/when-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">When Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+<div class="ld-lesson-item-section-heading ld-lesson-item-section-heading-1592644948168">
+		<span class="ld-lesson-section-heading" role="heading" aria-level="3">Functions</span>
+	</div>
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/functions-and-parameters/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Functions and Parameters (13:12)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3681" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3681">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/functions-quiz-1/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Functions Quiz 1</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/functions-with-return-values/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Functions With Return Values (9:56)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3683" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3683">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/functions-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Functions Quiz 2</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/vararg-default-and-named-parameters/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Vararg, Default and Named Parameters (15:11)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3685" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3685">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/vararg-default-and-named-parameters-quiz/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Vararg, Default and Named Parameters Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/extension-functions/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Extension Functions (10:58)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3687" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3687">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/extension-functions-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Extension Functions Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+<div class="ld-lesson-item-section-heading ld-lesson-item-section-heading-1592644972467">
+		<span class="ld-lesson-section-heading" role="heading" aria-level="3">Object Orientation</span>
+	</div>
+
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://pl-coding.com/lessons/classes/">
+
+			<div class="ld-status-icon ld-status-incomplete"></div>
+			<div class="ld-lesson-title">
+				Classes (18:38)			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate " aria-label="Expand Lesson" data-ld-expands="ld-nav-content-list-3689" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					1 Quiz				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable " id="ld-nav-content-list-3689">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-incomplete">
+	<div class="ld-table-list-item-wrapper">
+		<a class="ld-table-list-item-preview ld-primary-color-hover" href="https://pl-coding.com/quizzes/classes-quiz-2/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-topic-title">Classes Quiz</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+<div class="ld-pagination ld-pagination-page-course_lessons" data-pager-nonce="2c6e0110aa" data-pager-results="{&quot;paged&quot;:1,&quot;total_items&quot;:29,&quot;total_pages&quot;:2}">
+						<div class="ld-pages">
+		<a class="prev ld-primary-color-hover disabled" href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/?ld-lesson-page=1" data-context="course_lessons" data-paged="1" data-course_id="3644" disabled="&quot;disabled&quot;" title="Previous Page">
+					<span class="ld-icon-arrow-left ld-icon"></span></a>
+				
+		<span>
+		1 of 2		</span>
+			<a class="next ld-primary-color-hover " href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/?ld-lesson-page=2" data-context="course_lessons" data-paged="2" data-course_id="3644" title="Next Page">
+							<span class="ld-icon-arrow-right ld-icon"></span></a>
+			
+		</div>
+						</div>					</div> <!--/.ld-lesson-items-->
+				</div> <!--/.ld-lesson-navigation-->
+			</div> <!--/.ld-course-navigation-list-->
+		</div> <!--/.ld-course-navigation-->
+			</div> <!--/.ld-focus-sidebar-wrapper-->
+</div> <!--/.ld-focus-sidebar-->
+
+
+	<div class="ld-focus-main">
+
+		<div class="ld-focus-header">
+
+	
+	<div class="ld-mobile-nav">
+		<a href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#" class="ld-trigger-mobile-nav" aria-label="Menu">
+			<span class="bar-1"></span>
+			<span class="bar-2"></span>
+			<span class="bar-3"></span>
+		</a>
+	</div>
+
+	
+	<div class="ld-brand-logo">
+	<a href="https://pl-coding.com/"><img src="./Video Player- pl-coding_files/plcoding.svg" alt=""></a>	</div>
+
+		<div class="ld-progress
+	">
+					<div class="ld-progress-wrap">
+					<div class="ld-progress-heading">
+								<div class="ld-progress-stats">
+					<div class="ld-progress-percentage ld-secondary-color">
+					0% Complete					</div>
+					<div class="ld-progress-steps">
+						0/30 Steps					</div>
+				</div> <!--/.ld-progress-stats-->
+			</div>
+
+			<div class="ld-progress-bar">
+				<div class="ld-progress-bar-percentage ld-secondary-background" style="width:0%"></div>
+			</div>
+							</div> <!--/.ld-progress-wrap-->
+				</div> <!--/.ld-progress-->
+	
+<div class="ld-content-actions">
+
+		<div class="ld-content-action
+			ld-empty
+		">
+		</div>
+
+		<div class="ld-content-action">
+		<form class="sfwd-mark-complete" method="post" action="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/"><input type="hidden" value="3651" name="post">
+					<input type="hidden" value="3644" name="course_id">
+					<input type="hidden" value="10db9c9391" name="sfwd_mark_complete">
+					<input type="submit" value="Mark Complete" class="learndash_mark_complete_button"></form>	</div>
+		
+</div> <!--/.ld-topic-actions-->
+
+
+			<div class="ld-user-menu">
+						<span class="ld-text ld-user-welcome-text">
+			Hello, shanerex!				</span>
+
+			<span class="ld-profile-avatar dropdown" style="display: inline-block;"><span id="username">
+							</span>
+				<img src="./Video Player- pl-coding_files/default_avatar.svg" class="gravatar avatar avatar-96 um-avatar um-avatar-default dropbtn" width="96" height="96" alt="ShaneRex" data-default="https://pl-coding.com/wp-content/uploads/2020/08/default_avatar.svg" onerror="if ( ! this.getAttribute(&#39;data-load-error&#39;) ){ this.setAttribute(&#39;data-load-error&#39;, &#39;1&#39;);this.setAttribute(&#39;src&#39;, this.getAttribute(&#39;data-default&#39;));}">			<div class="dropdown-content"><a href="https://pl-coding.com/account">My Account</a><a href="https://pl-coding.com/logout">Logout</a></div></span> <!--/.ld-profile-avatar-->
+
+			
+			<span class="ld-user-menu-items">
+										<a href="https://pl-coding.com/courses/kotlin-newbie-to-pro/">Course Home</a>
+												<a href="https://pl-coding.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fpl-coding.com%2Fcourses%2Fkotlin-newbie-to-pro%2F&amp;_wpnonce=02b3003306">Logout</a>
+									</span> <!--/.ld-user-menu-items-->
+
+			
+		</div>
+		</div> <!--/.ld-focus-header-->
+
+		<div class="ld-focus-content">
+
+			
+			<h1>Why Every Android Developer Should Know Kotlin (9:16)</h1>
+
+			
+			<div class="learndash learndash_post_sfwd-lessons user_has_access" id="learndash_post_3651">
+<div class="learndash-wrapper lds-template-expanded">
+
+	
+
+		<div class="ld-lesson-status">
+			<div class="ld-breadcrumbs">
+
+				
+<div class="ld-breadcrumbs-segments">
+				<span><a href="https://pl-coding.com/courses/kotlin-newbie-to-pro/">Kotlin Newbie to Pro</a> </span>
+						<span><a href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/">Why Every Android Developer Should Know Kotlin (9:16)</a> </span>
+			</div> <!--/.ld-breadcrumbs-segments-->
+
+<div class="ld-status ld-status-progress ld-primary-background">In Progress</div>
+			</div>
+		</div>
+
+		
+
+<div class="ld-tabs ld-tab-count-1">
+	
+	<div class="ld-tabs-content">
+		
+			<div class="ld-tab-content ld-visible" id="ld-tab-content-3651">
+								<div class="ld-video" data-video-progression="true" data-video-cookie-key="learndash-video-progress-0d31b1d76933a52f6c23c9ac0570c047" data-video-provider="youtube"><iframe width="560" height="315" src="./Video Player- pl-coding_files/QsrQV0wXh2E.html" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>			</div>
+
+			
+	</div> <!--/.ld-tabs-content-->
+
+</div> <!--/.ld-tabs-->
+
+<div class="ld-content-actions">
+
+		<div class="ld-content-action
+			ld-empty
+		">
+		</div>
+
+				<div class="ld-content-action">
+			<form class="sfwd-mark-complete" method="post" action="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/"><input type="hidden" value="3651" name="post">
+					<input type="hidden" value="3644" name="course_id">
+					<input type="hidden" value="10db9c9391" name="sfwd_mark_complete">
+					<input type="submit" value="Mark Complete" class="learndash_mark_complete_button"></form>
+						<a href="https://pl-coding.com/courses/kotlin-newbie-to-pro/" class="ld-primary-color ld-course-step-back">Back to Course			</a>
+			</div>
+			<div class="ld-content-action">
+							<a class="ld-button " href="https://pl-coding.com/lessons/setting-up-what-we-need/">
+					<span class="ld-text">Next Lesson</span>
+											<span class="ld-icon ld-icon-arrow-right"></span>
+									</a>
+						</div>
+					
+</div> <!--/.ld-topic-actions-->
+
+
+</div> <!--/.learndash-wrapper-->
+</div>
+			
+			
+			
+					</div> <!--/.ld-focus-content-->
+
+	</div> <!--/.ld-focus-main-->
+
+		<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_footer et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				<div class="et_pb_code_inner"><script>
+
+  var markCompleteBtns = document.getElementsByClassName("learndash_mark_complete_button");
+  setTimeout(function() {
+    for(i = 0; i < markCompleteBtns.length; i++) {
+    markCompleteBtns[i].disabled = false;
+  }
+  }, 1000);
+	
+</script></div>
+			</div> <!-- .et_pb_code -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section -->		</div><!-- .et_builder_inner_content -->
+	</footer><!-- .et-l -->
+	
+			
+		</div><!-- #et-boc -->
+						</div> <!--/.ld-focus-->
+			</div> <!--/.ld-learndash-wrapper-->
+
+						
+	<a class="nt-note-tab  bottom ldnt-style-tab" href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#" data-postid="" data-contentid="3651">
+		<i class="nticon-doc"></i> <span class="nt-screen-reader-text">Take Notes</span>
+	</a>
+
+	 <!--/.nt-note-wrapper-->
+
+   
+<div id="um_upload_single" style="display:none"></div>
+<div id="um_view_photo" style="display:none">
+
+	<a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close" aria-label="Close view photo modal">
+		<i class="um-faicon-times"></i>
+	</a>
+
+	<div class="um-modal-body photo">
+		<div class="um-modal-photo"></div>
+	</div>
+
+</div><!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true" style="background-color: rgb(32, 32, 32); color: rgb(255, 255, 255); font-family: inherit; bottom: 0px; position: fixed; display: none;"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish. <a role="button" tabindex="0" class="cli_settings_button" style="margin: 5px 20px; color: rgb(98, 163, 41);">Cookie settings</a><a role="button" tabindex="0" data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(10, 0, 0);">ACCEPT</a></span></div><div id="cookie-law-info-again" style="display: none; background-color: rgb(32, 32, 32); color: rgb(255, 255, 255); position: fixed; font-family: inherit; width: auto; bottom: 0px; right: 100px;" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy &amp; Cookies Policy</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+	  	<button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+	  	</button>
+	  	<div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities...</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Show more" tabindex="0" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+							<div class="wt-cli-necessary-checkbox">
+                        <input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+                        <label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+                    </div>
+                    <span class="cli-necessary-caption">Always Enabled</span> 						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<p>Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.</p>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+								Non-necessary							</a>
+							<div class="cli-switch">
+                        <input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox" data-id="checkbox-non-necessary" checked="checked">
+                        <label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Non-necessary</span></label>
+                    </div>						</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="non-necessary">
+								<p>Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.</p>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+	  	</div>
+	  	<div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay" style="display: block;"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay" style="display: block;"></div>
+<!--googleon: all-->	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script async="" src="./Video Player- pl-coding_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176097126-1');
+</script>
+
+
+<script>
+var accountContainer = document.getElementsByClassName("um-avatar")[0].parentElement;
+accountContainer.classList.add("dropdown");
+var accountIcon = document.getElementsByClassName("um-avatar")[0];
+accountIcon.classList.add("dropbtn");
+accountContainer.removeAttribute("href");
+var username = accountContainer.innerText || element.textContent;
+var usernameSpan = document.createElement("span");
+usernameSpan.id = "username";
+usernameSpan.innerHTML = username;
+
+accountContainer.innerHTML = accountContainer.innerHTML.replace(username, '');
+  
+accountContainer.insertBefore(usernameSpan, accountContainer.firstChild);
+  
+  
+var dropdownContent = document.createElement("div");
+dropdownContent.innerHTML = "<a href='https://pl-coding.com/account'>My Account</a><a href='https://pl-coding.com/logout'>Logout</a>";
+dropdownContent.classList.add("dropdown-content");
+accountContainer.insertBefore(dropdownContent, accountIcon.nextSibling);
+	
+accountContainer.style.display = 'inline-block';
+</script><link rel="stylesheet" id="wp-jquery-ui-dialog-css" href="./Video Player- pl-coding_files/jquery-ui-dialog.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./Video Player- pl-coding_files/learndash_pager.min.js.download" id="learndash_pager_js-js"></script>
+<script type="text/javascript" id="learndash_template_script_js-js-extra">
+/* <![CDATA[ */
+var sfwd_data = {"json":"{\"ajaxurl\":\"https:\\\/\\\/pl-coding.com\\\/wp-admin\\\/admin-ajax.php\"}"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/learndash_template_script.min.js.download" id="learndash_template_script_js-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/jquery.dropdown.min.js.download" id="jquery-dropdown-js-js"></script>
+<script type="text/javascript" id="learndash-front-js-extra">
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/pl-coding.com\/wp-admin\/admin-ajax.php";
+var ldVars = {"postID":"3651","videoReqMsg":"You must watch the video before accessing this content"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/learndash.js.download" id="learndash-front-js"></script>
+<script type="text/javascript" id="learndash-front-js-after">
+    jQuery(document).ready(function($) {
+
+        function lds_init_custom_icons() {
+
+            console.log('running custom icons!');
+
+            
+        }
+
+        lds_init_custom_icons();
+
+        $('body').on( 'ld_has_paginated', function() {
+            lds_init_custom_icons();
+        });
+
+    });
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/jquery.blockUI.min.js.download" id="jquery-blockui-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/pl-coding.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/add-to-cart.min.js.download" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/js.cookie.min.js.download" id="js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/woocommerce.min.js.download" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_ed833cd8e7f640bfc92dca97759d0b79","fragment_name":"wc_fragments_ed833cd8e7f640bfc92dca97759d0b79","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/cart-fragments.min.js.download" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/pl-coding.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/pl-coding.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/pl-coding.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"9de9054eab","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"c48b2d48bf","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3651","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/custom.unified.js.download" id="divi-custom-script-js"></script>
+<script type="text/javascript" id="et-builder-cpt-modules-wrapper-js-extra">
+/* <![CDATA[ */
+var et_modules_wrapper = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/cpt-modules-wrapper.js.download" id="et-builder-cpt-modules-wrapper-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/common.js.download" id="et-core-common-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/enlighterjs.min.js.download" id="enlighterjs-js"></script>
+<script type="text/javascript" id="enlighterjs-js-after">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":6,"ampersandCleanup":true,"linehover":false,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"monokai","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/select2.full.min.js.download" id="select2-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/underscore.min.js.download" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/wp-util.min.js.download" id="wp-util-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-crop.min.js.download" id="um_crop-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-modal.min.js.download" id="um_modal-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-jquery-form.min.js.download" id="um_jquery_form-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-fileupload.min.js.download" id="um_fileupload-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/picker.js.download" id="um_datetime-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/picker.date.js.download" id="um_datetime_date-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/picker.time.js.download" id="um_datetime_time-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/wp-polyfill.min.js.download" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://pl-coding.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/hooks.min.js.download" id="wp-hooks-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/i18n.min.js.download" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-raty.min.js.download" id="um_raty-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-tipsy.min.js.download" id="um_tipsy-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/imagesloaded.min.js.download" id="imagesloaded-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/masonry.min.js.download" id="masonry-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/jquery.masonry.min.js.download" id="jquery-masonry-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/simplebar.min.js.download" id="um_scrollbar-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-functions.min.js.download" id="um_functions-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-responsive.min.js.download" id="um_responsive-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-conditional.min.js.download" id="um_conditional-js"></script>
+<script type="text/javascript" id="um_scripts-js-extra">
+/* <![CDATA[ */
+var um_scripts = {"nonce":"c334204b6c"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-scripts.min.js.download" id="um_scripts-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-profile.min.js.download" id="um_profile-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/um-account.min.js.download" id="um_account-js"></script>
+<script type="text/javascript" id="site-reviews-js-before">
+window.hasOwnProperty("GLSR")||(window.GLSR={});GLSR.action="glsr_action";GLSR.ajaxpagination=["#wpadminbar",".site-navigation-fixed"];GLSR.ajaxurl="https://pl-coding.com/wp-admin/admin-ajax.php";GLSR.nameprefix="site-reviews";GLSR.urlparameter=true;GLSR.validationconfig={error_tag:"div",error_tag_class:"glsr-field-error",field_class:"glsr-field",field_error_class:"glsr-has-error",input_error_class:"glsr-is-invalid",input_valid_class:"glsr-is-valid",message_error_class:"glsr-has-errors",message_initial_class:"glsr-is-visible",message_success_class:"glsr-has-success",message_tag:"div",message_tag_class:"glsr-form-message",json:"[]"};GLSR.validationstrings={accepted:"This field must be accepted.",between:"This field value must be between %s and %s.",betweenlength:"This field must have between %s and %s characters.",email:"This field requires a valid e-mail address.",errors:"Please fix the submission errors.",max:"Maximum value for this field is %s.",maxlength:"This field allows a maximum of %s characters.",min:"Minimum value for this field is %s.",minlength:"This field requires a minimum of %s characters.",number:"This field requires a number.",required:"This field is required.",unsupported:"The review could not be submitted (unsupported browser)."};
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/site-reviews.js.download" id="site-reviews-js"></script>
+<script type="text/javascript" id="ldvc-js-extra">
+/* <![CDATA[ */
+var ldvc = {"theme":"","template":"expanded"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/ldvc.js.download" id="ldvc-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/js.cookie.min.js(1).download" id="learndash_cookie_script_js-js"></script>
+<script type="text/javascript" id="learndash_video_script_js-js-extra">
+/* <![CDATA[ */
+var learndash_video_data = {"videos_found_provider":"youtube","videos_found_type":"iframe","videos_auto_start":"1","videos_show_controls":"1","videos_auto_complete":"","videos_auto_complete_delay":"0","videos_auto_complete_delay_message":"","videos_hide_complete_button":"","videos_shown":"BEFORE","video_debug":"","video_admin_bypass":"","video_cookie_key":"learndash-video-progress-0d31b1d76933a52f6c23c9ac0570c047","video_focus_pause":"","video_track_time":"1","video_track_expires":"30","video_track_domain":"","video_track_path":"\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/learndash_video_script.min.js.download" id="learndash_video_script_js-js"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api?ver=3.2.2" id="youtube_iframe_api-js"></script>
+<script type="text/javascript" id="utils-js-extra">
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"4690","time":"1631210456","secure":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/utils.min.js.download" id="utils-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/editor.min.js.download" id="editor-js"></script>
+<script type="text/javascript" id="editor-js-after">
+window.wp.oldEditor = window.wp.editor;
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/dom-ready.min.js.download" id="wp-dom-ready-js"></script>
+<script type="text/javascript" id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/a11y.min.js.download" id="wp-a11y-js"></script>
+<script type="text/javascript" id="wplink-js-extra">
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No results found.","linkSelected":"Link selected.","linkInserted":"Link inserted.","minInputLength":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/wplink.min.js.download" id="wplink-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/menu.min.js.download" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" id="jquery-ui-autocomplete-js-extra">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/autocomplete.min.js.download" id="jquery-ui-autocomplete-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/controlgroup.min.js.download" id="jquery-ui-controlgroup-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/checkboxradio.min.js.download" id="jquery-ui-checkboxradio-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/button.min.js.download" id="jquery-ui-button-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/dialog.min.js.download" id="jquery-ui-dialog-js"></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "https://pl-coding.com/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {'nt-note-body-3651':{theme:"modern",skin:"lightgray",language:"en",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-49110-20201110",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"en-US",wp_keep_scroll_position:false,wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Insert\/edit link":"metaK","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Add Media":"accessM","Keyboard Shortcuts":"accessH"},content_css:"https://pl-coding.com/wp-includes/css/dashicons.min.css?ver=5.7.3,https://pl-coding.com/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=5.7.3",plugins:"colorpicker,lists,fullscreen,image,wordpress,wpeditimage,wplink",selector:"#nt-note-body-3651",wpautop:false,indent:true,toolbar1:"bold, italic, underline,strikethrough,blockquote,numlist,bullist,fontsizeselect,formatselect",toolbar2:"",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"nt-note-body-3651 post-type-sfwd-lessons post-status-publish page-template-default locale-en-us"}},
+			qtInit: {},
+			ref: {plugins:"colorpicker,lists,fullscreen,image,wordpress,wpeditimage,wplink",theme:"modern",language:"en"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type="text/javascript" src="./Video Player- pl-coding_files/tinymce.min.js.download" id="wp-tinymce-root-js"></script>
+<script type="text/javascript" src="./Video Player- pl-coding_files/plugin.min.js.download" id="wp-tinymce-js"></script>
+<script type="text/javascript">
+tinymce.addI18n( 'en', {"Ok":"OK","Bullet list":"Bulleted list","Insert\/Edit code sample":"Insert\/edit code sample","Url":"URL","Spellcheck":"Check Spelling","Row properties":"Table row properties","Cell properties":"Table cell properties","Cols":"Columns","Paste row before":"Paste table row before","Paste row after":"Paste table row after","Cut row":"Cut table row","Copy row":"Copy table row","Merge cells":"Merge table cells","Split cell":"Split table cell","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.\n\nIf you\u2019re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Rich Text Area. Press Alt-Shift-H for help.","You have unsaved changes are you sure you want to navigate away?":"The changes you made will be lost if you navigate away from this page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser\u2019s edit menu instead.","Edit|button":"Edit"});
+tinymce.ScriptLoader.markDone( 'https://pl-coding.com/wp-includes/js/tinymce/langs/en.js' );
+</script>
+		<script type="text/javascript">
+		var ajaxurl = "/wp-admin/admin-ajax.php";
+		( function() {
+			var init, id, $wrap;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				if ( tinymce.Env.ie && tinymce.Env.ie < 11 ) {
+					tinymce.$( '.wp-editor-wrap ' ).removeClass( 'tmce-active' ).addClass( 'html-active' );
+					return;
+				}
+
+				for ( id in tinyMCEPreInit.mceInit ) {
+					init = tinyMCEPreInit.mceInit[id];
+					$wrap = tinymce.$( '#wp-' + id + '-wrap' );
+
+					if ( ( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) && ! init.wp_skip_init ) {
+						tinymce.init( init );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="cff3b5c05f">		<h1 id="link-modal-title">Insert/edit link</h1>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url"></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Link Text</span>
+					<input id="wp-link-text" type="text"></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target"> Open link in a new tab</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Search</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content">
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">No search term specified. Showing recent items.</em>
+						<em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Cancel</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		<!-- WooCommerce JavaScript -->
+<script type="text/javascript">
+jQuery(function($) { 
+
+			$( '.add_to_cart_button:not(.product_type_variable, .product_type_grouped)' ).on( 'click', function() {
+				_gaq.push(['_trackEvent', 'Products', 'Add to Cart', ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id'))]);
+			});
+		
+ });
+</script>
+		<script type="text/javascript">
+			jQuery( window ).on( 'load', function() {
+				jQuery('input[name="um_request"]').val('');
+			});
+		</script>
+	
+	
+
+<p id="a11y-speak-intro-text" class="a11y-speak-intro-text" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" hidden="hidden">Notifications</p><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div id="mceu_24" class="mce-toolbar-grp mce-inline-toolbar-grp mce-container mce-panel" hidefocus="1" tabindex="-1" role="group" style="display: none;"><div id="mceu_24-body" class="mce-container-body mce-stack-layout"><div id="mceu_25" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_25-body" class="mce-container-body mce-flow-layout"><div id="mceu_26" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_26-body"><div id="mceu_18" class="mce-widget mce-btn mce-first" tabindex="-1" role="button" aria-label="Align left (Shift+Alt+L)"><button id="mceu_18-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-left"></i></button></div><div id="mceu_19" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Align center (Shift+Alt+C)"><button id="mceu_19-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-center"></i></button></div><div id="mceu_20" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Align right (Shift+Alt+R)"><button id="mceu_20-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-right"></i></button></div><div id="mceu_21" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="No alignment"><button id="mceu_21-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-none"></i></button></div><div id="mceu_22" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Edit"><button id="mceu_22-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-edit"></i></button></div><div id="mceu_23" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Remove"><button id="mceu_23-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-no"></i></button></div></div></div></div></div></div></div><div id="mceu_30" class="mce-toolbar-grp mce-inline-toolbar-grp mce-container mce-panel" hidefocus="1" tabindex="-1" role="group" style="display: none;"><div id="mceu_30-body" class="mce-container-body mce-stack-layout"><div id="mceu_31" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_31-body" class="mce-container-body mce-flow-layout"><div id="mceu_32" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_32-body"><div id="mceu_27" class="wp-link-preview"><a href="https://pl-coding.com/lessons/why-every-android-developer-should-know-kotlin/#" target="_blank" rel="noopener" tabindex="-1">#</a></div><div id="mceu_28" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Edit"><button id="mceu_28-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-edit"></i></button></div><div id="mceu_29" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Remove link (Shift+Alt+S)"><button id="mceu_29-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-editor-unlink"></i></button></div></div></div></div></div></div></div><div id="mceu_36" class="mce-toolbar-grp mce-inline-toolbar-grp mce-container mce-panel" hidefocus="1" tabindex="-1" role="group" style="display: none;"><div id="mceu_36-body" class="mce-container-body mce-stack-layout"><div id="mceu_37" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_37-body" class="mce-container-body mce-flow-layout"><div id="mceu_38" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_38-body"><div id="mceu_33" class="wp-link-input"><input type="text" value="" placeholder="Paste URL or type to search" class="ui-autocomplete-input" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="ui-id-1"><input type="text" style="display:none" value=""></div><div id="mceu_34" class="mce-widget mce-btn mce-primary" tabindex="-1" role="button" aria-label="Apply"><button id="mceu_34-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-editor-break"></i></button></div><div id="mceu_35" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Link options"><button id="mceu_35-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-admin-generic"></i></button></div></div></div></div></div></div></div><ul id="ui-id-1" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front wplink-autocomplete" role="listbox" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
